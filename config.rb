@@ -17,6 +17,18 @@ end
 configure :build do
   # Relative assets needed to deploy to Github Pages
   activate :relative_assets
+
+  # For example, change the Compass output style for deployment
+  activate :minify_css
+
+  # Minify Javascript on build
+  activate :minify_javascript
+
+  # Enable cache buster
+  # activate :asset_hash
+
+  # Or use a different image path
+  # set :http_prefix, "/Content/images/"
 end
 
 activate :deploy do |deploy|

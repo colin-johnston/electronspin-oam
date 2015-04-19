@@ -1,3 +1,5 @@
+$maintype: Avenir, Helvetica, Arial, sans-serif;
+
 body {
   // background-color: $light-gray;
   // color: $medium-gray;
@@ -6,7 +8,8 @@ body {
   &.index {
   background-color: rgb(65,65,65);
   color: hsl(0,0%,88%);
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: $maintype;
+  cursor: crosshair;
   }
 
 }
@@ -30,9 +33,11 @@ canvas {
     font-weight: 700;
     letter-spacing: .1em;
     text-transform: uppercase;
+    //cursor: none;
 
     h1 {
       font-size: 2.5em;
+      font-family: $maintype;
     }
     p {
       font-size: 1.5em;
